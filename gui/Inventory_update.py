@@ -23,10 +23,11 @@ def updateData(material, color, addetive, brand, remaining, Filament_Id):
     data6 = Filament_Id
 
 
+
+
     update_info = "update filament set Material= '" + data1 + "', Color= '" + \
-        data2 + "', Addetive=" +data3 +", Brand=" + \
-        data4 + "', Remaining=" +data5 +" where Material = '"+data1 + \
-        "' OR Color='" +data2+"' OR Filament_ID = "+str(data6) + ";"
+        data2 + "', Addetive='" +data3 +"', Brand='" + \
+        data4 + "', Remaining=" +str(data5) +" where Filament_ID = "+ str(data6) + ";"
     
     try:
         cur.execute(update_info)
